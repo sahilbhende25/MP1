@@ -7,7 +7,7 @@ app = Flask(__name__)
 @app.route('/',methods = ['POST', 'GET'])
 def login():
    if request.method == 'POST':
-      command = ['python','temp_stress.py']
+      command = ['python','stress_cpu.py']
       subprocess.Popen(command)
       return "Complete"
    else:
